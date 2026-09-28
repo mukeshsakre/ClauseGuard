@@ -1,0 +1,6 @@
+{
+  "name": "ClauseGuard",
+  "description": "High-density enterprise contract compliance platform, portfolio query engine, and LLM governance console.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

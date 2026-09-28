@@ -1,0 +1,14 @@
+.env
+.venv/
+**/node_modules/
+**/dist/
+.pytest_cache/
+.ruff_cache/
+__pycache__/
+*.py[cod]
+*.egg-info/
+deploy/postgres-data/
+deploy/minio-data/
+deploy/object-data/
+deploy/neo4j-data/
+evaluation/private/

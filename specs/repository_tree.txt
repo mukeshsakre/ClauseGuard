@@ -1,0 +1,25 @@
+ClauseGuard/
+├── specs/                         # PRD, technical stack, and this repository tree
+└── src/                           # All product code, dependencies, and deployment assets
+    ├── app/
+    │   ├── api/    # FastAPI HTTP and authentication boundary
+    │   ├── worker/ # Celery worker and asynchronous jobs
+    │   └── web/                    # Existing React/Vite UI, API client, npm dependencies
+    ├── packages/core/
+    │   ├── __init__.py             # Exposed as the clauseguard_core Python package
+    │   ├── config.py               # Core runtime settings
+    │   ├── domain/                 # Persistence entities, actors, scope
+    │   ├── application/            # Scope resolution and bounded agentic Ask
+    │   ├── ingestion/              # PDF and DOCX extraction
+    │   ├── infrastructure/         # PostgreSQL, Qdrant, object storage, model adapters
+    │   └── observability.py        # Redacted event and audit writers
+    ├── migrations/                 # Alembic schema migrations
+    ├── scripts/                    # Explicit, non-destructive user migration utilities
+    ├── deploy/                     # ClauseGuard PostgreSQL Compose deployment
+    ├── evaluation/datasets/        # Isolated synthetic evaluation assets
+    ├── tests/                      # Unit and integration tests
+    ├── .venv/                      # Python dependencies (local, ignored by Git)
+    ├── .env.example
+    ├── pyproject.toml
+    ├── alembic.ini
+    └── README.md
