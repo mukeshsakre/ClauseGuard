@@ -1,25 +1,15 @@
-"""Make the source-tree core package importable without an editable install."""
+"""Unit tests use the installed package and never load customer dotenv credentials."""
 
-from __future__ import annotations
+import pytest
 
-import importlib.util
-import sys
-from pathlib import Path
+from clauseguard_core.config import get_settings
 
 
-CORE_ROOT = Path(__file__).resolve().parents[1] / "packages" / "core"
-PACKAGE_INIT = CORE_ROOT / "__init__.py"
-
-# The repository keeps core modules directly under packages/core, while the
-# installed distribution exposes those modules as clauseguard_core.*.
-spec = importlib.util.spec_from_file_location(
-    "clauseguard_core",
-    PACKAGE_INIT,
-    submodule_search_locations=[str(CORE_ROOT)],
-)
-if spec is None or spec.loader is None:
-    raise ImportError(f"Could not load ClauseGuard core package from {CORE_ROOT}")
-
-core_package = importlib.util.module_from_spec(spec)
-sys.modules.setdefault("clauseguard_core", core_package)
-spec.loader.exec_module(core_package)
+@pytest.fixture(autouse=True)
+def isolate_unit_configuration(monkeypatch):
+    monkeypatch.setenv("APP_ENV", "test")
+    monkeypatch.setenv("OPENAI_API_KEY", "")
+    monkeypatch.setenv("OBJECT_STORE_BACKEND", "filesystem")
+    get_settings.cache_clear()
+    yield
+    get_settings.cache_clear()

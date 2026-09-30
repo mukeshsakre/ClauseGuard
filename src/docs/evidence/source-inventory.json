@@ -1,0 +1,628 @@
+{
+  "scope": "First-party src files and dependency manifests; generated/vendor/runtime/private files and local secrets excluded. Full-file text scan plus targeted control-flow review. Not a security certification.",
+  "files": [
+    {
+      "path": "src/.env.example",
+      "bytes": 1072,
+      "sha256": "4111124317d29c60f42cff7500f8a4dad51c5c5fc6699d26612de046545efa72",
+      "lines": 32,
+      "signals": []
+    },
+    {
+      "path": "src/.gitignore",
+      "bytes": 201,
+      "sha256": "98e4725cf28b0f28726186c4c619979c30614c4db00d53ca80a2d318e223b3e1",
+      "lines": 14,
+      "signals": []
+    },
+    {
+      "path": "src/alembic.ini",
+      "bytes": 583,
+      "sha256": "bb60ae67f8b4880f4989947f53f212b0b332816493afa3e4ae444e769b2a4f0d",
+      "lines": 38,
+      "signals": []
+    },
+    {
+      "path": "src/app/api/clauseguard_api/__init__.py",
+      "bytes": 35,
+      "sha256": "45390889d8a4a81a685fa8f8fb38422e5f6ff8840d7df1405f088ab5347ae8e2",
+      "lines": 1,
+      "signals": []
+    },
+    {
+      "path": "src/app/api/clauseguard_api/bootstrap.py",
+      "bytes": 3593,
+      "sha256": "9e4f37ea1aa7c906d7c4a91b22467f857ba00d7fc27e0e666f8d04450e4c9ed5",
+      "lines": 94,
+      "signals": []
+    },
+    {
+      "path": "src/app/api/clauseguard_api/main.py",
+      "bytes": 33269,
+      "sha256": "e5bb106e2767d1e3207c9509e1f58924d76d7d5544d881c81e633b356cd31b4b",
+      "lines": 833,
+      "signals": []
+    },
+    {
+      "path": "src/app/api/clauseguard_api/schemas.py",
+      "bytes": 1916,
+      "sha256": "6ab174aa225290f9581c39cd290310bd40f6dda842b3d96e9a9c5eb764944295",
+      "lines": 67,
+      "signals": []
+    },
+    {
+      "path": "src/app/api/clauseguard_api/security.py",
+      "bytes": 4180,
+      "sha256": "121fb8370f2ff3181faedafb0f1569f20b83ea47238662126a15a5357ba9a52e",
+      "lines": 126,
+      "signals": []
+    },
+    {
+      "path": "src/app/web/.env.example",
+      "bytes": 445,
+      "sha256": "b6d12c728de0aac8b0bc6239e53aa8088c1431bcb4f9a3d61e5e8a2df1c7c400",
+      "lines": 9,
+      "signals": []
+    },
+    {
+      "path": "src/app/web/.gitignore",
+      "bytes": 73,
+      "sha256": "db691f14fcf678985362a42c6aedb581e42cd6bb99962ce1b44aea460fb2a4df",
+      "lines": 8,
+      "signals": []
+    },
+    {
+      "path": "src/app/web/index.html",
+      "bytes": 1172,
+      "sha256": "9c19a56b2f25225d6c2ea7ca9fcc79c71fd6495e93ca81bf64a231920a22acc5",
+      "lines": 21,
+      "signals": []
+    },
+    {
+      "path": "src/app/web/metadata.json",
+      "bytes": 255,
+      "sha256": "c0bafffe4dbd0ebdf5e64b269e75f8dda18dfa0a430c73f49e64cbe285c84b71",
+      "lines": 6,
+      "signals": []
+    },
+    {
+      "path": "src/app/web/package-lock.json",
+      "bytes": 150330,
+      "sha256": "c8e9556c2a8fe317a4b1a09307db8fc974c575b8f0e25b15afe20750c53a2912",
+      "lines": 4478,
+      "signals": []
+    },
+    {
+      "path": "src/app/web/package.json",
+      "bytes": 889,
+      "sha256": "a4d2f4a193f00c3d41f4cad041c486d9e99f45324ec4f56cae80c6a6c699a7ff",
+      "lines": 36,
+      "signals": []
+    },
+    {
+      "path": "src/app/web/README.md",
+      "bytes": 542,
+      "sha256": "8da46a742bbfbf1780861675517d57925b0a0ff408de341533d0478b7bb2db5f",
+      "lines": 20,
+      "signals": []
+    },
+    {
+      "path": "src/app/web/src/api/client.ts",
+      "bytes": 6102,
+      "sha256": "ebb30daff16bf6739e8f2e5ded601f606cc1a15068cbc8c70e07727608c7aa8c",
+      "lines": 172,
+      "signals": []
+    },
+    {
+      "path": "src/app/web/src/App.tsx",
+      "bytes": 32754,
+      "sha256": "0ac6fbe0e06d7aa077e7f8d21c2fbc41e1aaa08ecf568b83df650a71a8ddaf4a",
+      "lines": 335,
+      "signals": []
+    },
+    {
+      "path": "src/app/web/src/components/admin/AdminConsole.tsx",
+      "bytes": 5991,
+      "sha256": "bc0649c9691f02c59faca3f53dac0bb8bae01581574da851f870c6ee16b1c0bc",
+      "lines": 188,
+      "signals": []
+    },
+    {
+      "path": "src/app/web/src/components/admin/AuditTrail.tsx",
+      "bytes": 6873,
+      "sha256": "cd6cad91c6e3c93772ddb4dae9418928d8aad731d5bcedd53dcef8ec661f4205",
+      "lines": 146,
+      "signals": [
+        {
+          "line": 47,
+          "kind": "manual_review_required"
+        }
+      ]
+    },
+    {
+      "path": "src/app/web/src/components/admin/ComponentSettings.tsx",
+      "bytes": 11694,
+      "sha256": "22c597d379945e6ee92dd82e5b0f4f7f9674c5e42e620ad67badcd2a9f93154c",
+      "lines": 260,
+      "signals": []
+    },
+    {
+      "path": "src/app/web/src/components/admin/GuardrailSettings.tsx",
+      "bytes": 8417,
+      "sha256": "7c5c5cd1c534d9f01af45dc05794ca9276ce55cbf19dfccc1e05a0af147b916f",
+      "lines": 179,
+      "signals": []
+    },
+    {
+      "path": "src/app/web/src/components/admin/IngestionPipeline.tsx",
+      "bytes": 24276,
+      "sha256": "fba62d17f4d7f0e82b3237412146df4c482cf81f15d56d3fccc4f1d2052de397",
+      "lines": 497,
+      "signals": [
+        {
+          "line": 72,
+          "kind": "manual_review_required"
+        },
+        {
+          "line": 243,
+          "kind": "manual_review_required"
+        },
+        {
+          "line": 249,
+          "kind": "manual_review_required"
+        }
+      ]
+    },
+    {
+      "path": "src/app/web/src/components/admin/LlmAnalytics.tsx",
+      "bytes": 8333,
+      "sha256": "ae6d7bfb1213d194f2ed7cce5c597efa2466f62ceeea8fdc63b967e751251401",
+      "lines": 174,
+      "signals": []
+    },
+    {
+      "path": "src/app/web/src/components/admin/LogsTracking.tsx",
+      "bytes": 7761,
+      "sha256": "087117fceb4b635eec3e2484629960d6c3fdabbe78775748c7dfa741c4c79341",
+      "lines": 177,
+      "signals": []
+    },
+    {
+      "path": "src/app/web/src/components/admin/ModelManagement.tsx",
+      "bytes": 6893,
+      "sha256": "853eb8191344b26582ace8284ff0c991b8bc35d8c3a12fc53fe7477a4bfe5b2b",
+      "lines": 161,
+      "signals": []
+    },
+    {
+      "path": "src/app/web/src/components/admin/UserTenantManagement.tsx",
+      "bytes": 14736,
+      "sha256": "28a8a0d9e09e16f78b333dd6fb30c9402479e7d16d423824308de7a5c696563d",
+      "lines": 278,
+      "signals": []
+    },
+    {
+      "path": "src/app/web/src/components/auth/LoginScreen.tsx",
+      "bytes": 4327,
+      "sha256": "b4b435dbf06abcbc076e810a79a789a665c9a054f3a17ed515fe7483356de3b3",
+      "lines": 109,
+      "signals": []
+    },
+    {
+      "path": "src/app/web/src/components/dashboard/ClaudeChatDashboard.tsx",
+      "bytes": 34613,
+      "sha256": "4e004bed65c2eaefce087505055f21367e12da25c980f3f38dddb72fa4980c62",
+      "lines": 766,
+      "signals": []
+    },
+    {
+      "path": "src/app/web/src/components/dashboard/ExecutiveOverview.tsx",
+      "bytes": 20606,
+      "sha256": "0a88369b084f3ddd63da61c5101ee057531d2dd6a4e58e8b06bdfbdf151a0613",
+      "lines": 454,
+      "signals": []
+    },
+    {
+      "path": "src/app/web/src/components/enduser/AnswerView.tsx",
+      "bytes": 12686,
+      "sha256": "a5093735672affcb99ef286eeb0517ce6dcf18c7cc0f16c014c715a9fcac9e9e",
+      "lines": 295,
+      "signals": [
+        {
+          "line": 266,
+          "kind": "manual_review_required"
+        }
+      ]
+    },
+    {
+      "path": "src/app/web/src/components/enduser/AskQuestion.tsx",
+      "bytes": 9893,
+      "sha256": "58c49c56330e53e42d7b10febf471e0562deaa0059183c01108150efd494a8f8",
+      "lines": 229,
+      "signals": []
+    },
+    {
+      "path": "src/app/web/src/components/enduser/BatchSweep.tsx",
+      "bytes": 15035,
+      "sha256": "580fcebd2dc28bfc1a650ed07061781e9108f5e855a3c52d822b108b17e3ccfc",
+      "lines": 311,
+      "signals": [
+        {
+          "line": 173,
+          "kind": "manual_review_required"
+        }
+      ]
+    },
+    {
+      "path": "src/app/web/src/components/enduser/ContractUploadIngestion.tsx",
+      "bytes": 17135,
+      "sha256": "cc8419d028a47a7afc258ac38d718c1923ab8afef86d7b4c129cb410b2f438c4",
+      "lines": 339,
+      "signals": [
+        {
+          "line": 19,
+          "kind": "manual_review_required"
+        },
+        {
+          "line": 25,
+          "kind": "manual_review_required"
+        },
+        {
+          "line": 42,
+          "kind": "manual_review_required"
+        },
+        {
+          "line": 44,
+          "kind": "manual_review_required"
+        },
+        {
+          "line": 46,
+          "kind": "manual_review_required"
+        },
+        {
+          "line": 79,
+          "kind": "manual_review_required"
+        },
+        {
+          "line": 100,
+          "kind": "manual_review_required"
+        },
+        {
+          "line": 117,
+          "kind": "manual_review_required"
+        },
+        {
+          "line": 124,
+          "kind": "manual_review_required"
+        }
+      ]
+    },
+    {
+      "path": "src/app/web/src/components/enduser/EndUserWorkspace.tsx",
+      "bytes": 8778,
+      "sha256": "ca25dbf3056b63ef4458dfb1586085532a2366bb5bd8fb0e1a1d28c8b9f8bb09",
+      "lines": 243,
+      "signals": [
+        {
+          "line": 65,
+          "kind": "manual_review_required"
+        },
+        {
+          "line": 67,
+          "kind": "manual_review_required"
+        },
+        {
+          "line": 81,
+          "kind": "manual_review_required"
+        },
+        {
+          "line": 204,
+          "kind": "manual_review_required"
+        }
+      ]
+    },
+    {
+      "path": "src/app/web/src/components/enduser/PolicyRulesetViewer.tsx",
+      "bytes": 10575,
+      "sha256": "afa6b1ee7b5a16d8b155203e7193895a42a16980c2b089d3b0445bb37a626774",
+      "lines": 218,
+      "signals": []
+    },
+    {
+      "path": "src/app/web/src/components/layout/ClauseGuardLogo.tsx",
+      "bytes": 1519,
+      "sha256": "8066f2064331e4d65b6a92ed6cf2c9c233e85b70f3f9166d5a425ae280a8a44e",
+      "lines": 56,
+      "signals": []
+    },
+    {
+      "path": "src/app/web/src/components/layout/Navbar.tsx",
+      "bytes": 11353,
+      "sha256": "b45daa136a9563f000a2ff2fc718ee53a71db5e2ce022bf392c5553a36dd0668",
+      "lines": 246,
+      "signals": []
+    },
+    {
+      "path": "src/app/web/src/components/profile/UserProfileView.tsx",
+      "bytes": 14131,
+      "sha256": "4ba44cdf2eba1a84cd542fc70e629ed819150a7e887c91ea5527bce8bf6c692f",
+      "lines": 312,
+      "signals": [
+        {
+          "line": 282,
+          "kind": "manual_review_required"
+        },
+        {
+          "line": 287,
+          "kind": "manual_review_required"
+        }
+      ]
+    },
+    {
+      "path": "src/app/web/src/components/spec/SpecReview.tsx",
+      "bytes": 14098,
+      "sha256": "98dcdcc33c844f9cf5102024c34a5a4437a0539717f5ee45b8abda9ff64cde63",
+      "lines": 304,
+      "signals": []
+    },
+    {
+      "path": "src/app/web/src/index.css",
+      "bytes": 592,
+      "sha256": "b4cc5b57a8db8c249471131a867830a2443275dde07c914db48bbdad50e976b5",
+      "lines": 26,
+      "signals": []
+    },
+    {
+      "path": "src/app/web/src/main.tsx",
+      "bytes": 231,
+      "sha256": "5580d48b0fec68698a113d45a640b88d479dc35eb1f4b87c51f67c6cc81cee9b",
+      "lines": 10,
+      "signals": []
+    },
+    {
+      "path": "src/app/web/src/types/index.ts",
+      "bytes": 6406,
+      "sha256": "39ced51c9cde87d12a1c178ab1930f60cc929467676d4783d0d104e278764787",
+      "lines": 264,
+      "signals": []
+    },
+    {
+      "path": "src/app/web/tsconfig.json",
+      "bytes": 603,
+      "sha256": "0909785476760a251dbf76ea335e227d60631c7674b6bc97efb97290c5c1b007",
+      "lines": 28,
+      "signals": []
+    },
+    {
+      "path": "src/app/web/vite.config.ts",
+      "bytes": 813,
+      "sha256": "5907ae87d749fc5520b5f1865c06f2f42a6230f8bbc389ed77b86697ce16e59f",
+      "lines": 26,
+      "signals": []
+    },
+    {
+      "path": "src/app/worker/clauseguard_worker/__init__.py",
+      "bytes": 29,
+      "sha256": "212662b6f0a7c52ad4afea766ea8086e8e349c4b0b20240209396d92c4caa92d",
+      "lines": 1,
+      "signals": []
+    },
+    {
+      "path": "src/app/worker/clauseguard_worker/celery_app.py",
+      "bytes": 698,
+      "sha256": "8c9d1339ffbe01aaec818e5aaf8ebd84ab63b08079d0cfc9071c834df4b3414f",
+      "lines": 27,
+      "signals": []
+    },
+    {
+      "path": "src/app/worker/clauseguard_worker/tasks.py",
+      "bytes": 12976,
+      "sha256": "918c2d412499d908e18955cc564ebd9cb2caefda6af93361350304b3cc115850",
+      "lines": 269,
+      "signals": []
+    },
+    {
+      "path": "src/deploy/.env.example",
+      "bytes": 123,
+      "sha256": "eb5762788204cc799b53d6694f55d62db20345394bf4c89867e094efc7f57cd7",
+      "lines": 4,
+      "signals": []
+    },
+    {
+      "path": "src/deploy/compose.yaml",
+      "bytes": 730,
+      "sha256": "7ebbd98e77eec13c2169fb21b3b8506460fd51ecbb6e5e3d972506693aee5764",
+      "lines": 22,
+      "signals": []
+    },
+    {
+      "path": "src/evaluation/datasets/README.md",
+      "bytes": 157,
+      "sha256": "180d545edcc9e1660662003c88d1244c4ecb63dce8814f76313190886dd60536",
+      "lines": 4,
+      "signals": []
+    },
+    {
+      "path": "src/migrations/env.py",
+      "bytes": 1451,
+      "sha256": "ba33a39852241b5722aef37b3308c4910186f307a83df08de5c7841d8003a39e",
+      "lines": 47,
+      "signals": []
+    },
+    {
+      "path": "src/migrations/versions/0001_initial_schema.py",
+      "bytes": 1065,
+      "sha256": "eb523cf526f222d151b1f6578e6315a5104ba46f1c87a66021f734981a2fdb58",
+      "lines": 33,
+      "signals": []
+    },
+    {
+      "path": "src/packages/core/__init__.py",
+      "bytes": 62,
+      "sha256": "0be8c1b0cba4ed1c28e1339609c46c50b36c715730c1388f73c8c327ce48854a",
+      "lines": 1,
+      "signals": []
+    },
+    {
+      "path": "src/packages/core/application/__init__.py",
+      "bytes": 44,
+      "sha256": "6604d48e64520147f49bd73d5dedbc56de155c201366868bb2119918b500903c",
+      "lines": 1,
+      "signals": []
+    },
+    {
+      "path": "src/packages/core/application/agentic_ask.py",
+      "bytes": 15832,
+      "sha256": "dcd2cf2bab7692c2822f4054e0ced3a0766d3abbe1aa0087b709c881edc6cb9d",
+      "lines": 359,
+      "signals": []
+    },
+    {
+      "path": "src/packages/core/application/scope_resolver.py",
+      "bytes": 2786,
+      "sha256": "e7e7ad8fd30a0a06d846f3d75933ec5e13f5e65f9d357b5d1e79f10034f7a759",
+      "lines": 64,
+      "signals": []
+    },
+    {
+      "path": "src/packages/core/config.py",
+      "bytes": 1600,
+      "sha256": "ee7935c05055018f7d459d11619c85d227e6df664b6650360aedbb81c505ac0f",
+      "lines": 42,
+      "signals": []
+    },
+    {
+      "path": "src/packages/core/domain/__init__.py",
+      "bytes": 45,
+      "sha256": "49fcab88999b7d01935fef9fde7d8a56d202ddf28c0799a32f7619c55734fc0c",
+      "lines": 1,
+      "signals": []
+    },
+    {
+      "path": "src/packages/core/domain/actor.py",
+      "bytes": 293,
+      "sha256": "111823d15ba7458ef94c7acc11a4676fb0463f313a0969ba1aac7c9cfb90ca85",
+      "lines": 13,
+      "signals": []
+    },
+    {
+      "path": "src/packages/core/domain/entities.py",
+      "bytes": 11222,
+      "sha256": "a7f13201958c2eba531c96f57f98d953cc46297f0112528d69c29330eaaa7be8",
+      "lines": 203,
+      "signals": []
+    },
+    {
+      "path": "src/packages/core/domain/scope.py",
+      "bytes": 698,
+      "sha256": "f66d97b223d48568c18d2a24897fba7639fac0533484b6048d47b91aa8ce776b",
+      "lines": 18,
+      "signals": []
+    },
+    {
+      "path": "src/packages/core/infrastructure/__init__.py",
+      "bytes": 76,
+      "sha256": "349548fedbf413f7675bf3f86c3230dbe64afccab3f9edc41cb02a81b3f351ba",
+      "lines": 1,
+      "signals": []
+    },
+    {
+      "path": "src/packages/core/infrastructure/database.py",
+      "bytes": 534,
+      "sha256": "a0ea9d978ce1c4139ebae740cca5c7051979e2d9c52978fff6655417e2cabd71",
+      "lines": 19,
+      "signals": []
+    },
+    {
+      "path": "src/packages/core/infrastructure/model_provider.py",
+      "bytes": 4385,
+      "sha256": "7681cf80cf356f0531fd8b303d0f19b1189e6f6a41c9af3e2bd6432937389d1a",
+      "lines": 103,
+      "signals": []
+    },
+    {
+      "path": "src/packages/core/infrastructure/object_store.py",
+      "bytes": 3217,
+      "sha256": "87658d961f7c78c51c0157d7eed37dbed236f278a9f8eb1857ff103d8aab83e5",
+      "lines": 81,
+      "signals": []
+    },
+    {
+      "path": "src/packages/core/infrastructure/search.py",
+      "bytes": 3467,
+      "sha256": "929c5fe5802df6255cfe983780c6a1ec553077ed45720470d2629a38a42c2cf9",
+      "lines": 81,
+      "signals": []
+    },
+    {
+      "path": "src/packages/core/ingestion/__init__.py",
+      "bytes": 40,
+      "sha256": "25aa5ee523c855fa2ce8781209995996248f470ba783df690fc7153f3b41e252",
+      "lines": 1,
+      "signals": []
+    },
+    {
+      "path": "src/packages/core/ingestion/extract.py",
+      "bytes": 5891,
+      "sha256": "de42d3bce1bc54d7f91bae0b87583faa79fccf71837ffdbfabbcff28e5deccf5",
+      "lines": 139,
+      "signals": []
+    },
+    {
+      "path": "src/packages/core/observability.py",
+      "bytes": 1683,
+      "sha256": "581e3b11ab95716482530f9eb00677c26f52e957dbbbf6e117e1bc2a1a3fae71",
+      "lines": 61,
+      "signals": []
+    },
+    {
+      "path": "src/pyproject.toml",
+      "bytes": 1877,
+      "sha256": "ba23872e1ba4185978a9e82f26b2bcfd4453c1ce39bb8b21668446029a94823c",
+      "lines": 74,
+      "signals": []
+    },
+    {
+      "path": "src/README.md",
+      "bytes": 2865,
+      "sha256": "56960501e3c5112a203d40e0527ca45b28549181ad1ccd89113cd638820dfd66",
+      "lines": 24,
+      "signals": []
+    },
+    {
+      "path": "src/scripts/migrate_cg_user.py",
+      "bytes": 7093,
+      "sha256": "4a0bbe91eeddd8df6d4fda41e6bba7e5af5132bdf0a9c4ffe4a9c31c9b5bf4f9",
+      "lines": 163,
+      "signals": []
+    },
+    {
+      "path": "src/scripts/requirements_catalog.py",
+      "bytes": 4277,
+      "sha256": "99da49d315338e5303e3c2c67f071aadedfe7ea1b8eb6a72f15e5b8d9ca9a716",
+      "lines": 110,
+      "signals": []
+    },
+    {
+      "path": "src/tests/conftest.py",
+      "bytes": 847,
+      "sha256": "e57046f7adefb9cdf947054ce7e11c84a686ee426532a7daf7614c8e6ccf2ef0",
+      "lines": 25,
+      "signals": []
+    },
+    {
+      "path": "src/tests/test_requirements_catalog.py",
+      "bytes": 1176,
+      "sha256": "5cc8403921d415ff9cf4231037b18fddfbfa29f4a6acf3a487586ccca6db6f56",
+      "lines": 25,
+      "signals": []
+    },
+    {
+      "path": "src/tests/test_scope_isolation.py",
+      "bytes": 8429,
+      "sha256": "e8c6015dc2a08a6145f82d34446e08944cd79f7548285f35eaf24ea11dfa79f2",
+      "lines": 254,
+      "signals": []
+    }
+  ]
+}

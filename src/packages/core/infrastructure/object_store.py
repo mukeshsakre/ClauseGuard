@@ -4,7 +4,7 @@ from pathlib import Path, PurePosixPath
 
 import boto3
 
-from clauseguard_core.config import get_settings
+from clauseguard_core.config import SOURCE_ROOT, get_settings
 
 
 class ObjectStore:
@@ -32,8 +32,7 @@ class ObjectStore:
         path = Path(configured_path)
         if path.is_absolute():
             return path.resolve()
-        project_root = Path(__file__).resolve().parents[5]
-        return (project_root / path).resolve()
+        return (SOURCE_ROOT / path).resolve()
 
     def _tenant_path(self, tenant_id: str, key: str) -> Path:
         parts = PurePosixPath(key).parts

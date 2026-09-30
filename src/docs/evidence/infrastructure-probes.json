@@ -1,0 +1,49 @@
+{
+  "at": "2026-09-28T08:53:34.706155+00:00",
+  "kind": "read-only connectivity audit",
+  "integration_verified": false,
+  "results": [
+    {
+      "dependency": "PostgreSQL",
+      "status": "REACHABLE",
+      "check": "Authenticated SELECT 1; no product data read or changed",
+      "elapsed_ms": 1066
+    },
+    {
+      "dependency": "MinIO",
+      "status": "BLOCKED",
+      "error_type": "RuntimeError",
+      "elapsed_ms": 416
+    },
+    {
+      "dependency": "RabbitMQ",
+      "status": "REACHABLE",
+      "check": "Authenticated AMQP connection; no tasks published",
+      "elapsed_ms": 175
+    },
+    {
+      "dependency": "Celery",
+      "status": "BLOCKED",
+      "error_type": "RuntimeError",
+      "elapsed_ms": 3293
+    },
+    {
+      "dependency": "Qdrant",
+      "status": "REACHABLE",
+      "check": "Collections API reachable; retrieval and isolation NOT verified",
+      "elapsed_ms": 2402
+    },
+    {
+      "dependency": "Neo4j",
+      "status": "BLOCKED",
+      "error_type": "ServiceUnavailable",
+      "elapsed_ms": 3325
+    },
+    {
+      "dependency": "Redis",
+      "status": "REACHABLE",
+      "check": "Authenticated PING; cache isolation NOT verified",
+      "elapsed_ms": 113
+    }
+  ]
+}

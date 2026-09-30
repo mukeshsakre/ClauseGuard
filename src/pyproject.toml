@@ -63,7 +63,7 @@ clauseguard_worker = "app/worker/clauseguard_worker"
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
-pythonpath = ["packages/core", "app/api", "app/worker"]
+pythonpath = ["."]
 
 [tool.ruff]
 line-length = 100

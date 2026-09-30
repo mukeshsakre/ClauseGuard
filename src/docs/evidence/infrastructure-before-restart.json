@@ -1,0 +1,49 @@
+{
+  "at": "2026-09-28T08:51:43.232003+00:00",
+  "kind": "read-only connectivity audit",
+  "integration_verified": false,
+  "results": [
+    {
+      "dependency": "PostgreSQL",
+      "status": "REACHABLE",
+      "check": "Authenticated SELECT 1; no product data read or changed",
+      "elapsed_ms": 1329
+    },
+    {
+      "dependency": "MinIO",
+      "status": "BLOCKED",
+      "error_type": "RuntimeError",
+      "elapsed_ms": 302
+    },
+    {
+      "dependency": "RabbitMQ",
+      "status": "BLOCKED",
+      "error_type": "ConnectionRefusedError",
+      "elapsed_ms": 6229
+    },
+    {
+      "dependency": "Celery",
+      "status": "BLOCKED",
+      "error_type": "OperationalError",
+      "elapsed_ms": 2374
+    },
+    {
+      "dependency": "Qdrant",
+      "status": "BLOCKED",
+      "error_type": "ResponseHandlingException",
+      "elapsed_ms": 6601
+    },
+    {
+      "dependency": "Neo4j",
+      "status": "BLOCKED",
+      "error_type": "ServiceUnavailable",
+      "elapsed_ms": 3359
+    },
+    {
+      "dependency": "Redis",
+      "status": "BLOCKED",
+      "error_type": "ConnectionError",
+      "elapsed_ms": 4181
+    }
+  ]
+}
